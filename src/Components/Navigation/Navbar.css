@@ -1,0 +1,35 @@
+.navbarLogo {
+    height: 65px;
+}
+
+#accountIcon {
+    padding: 0;
+    color: #F1F1F1;
+}
+
+.navButton:hover {
+    background-color: #1C1C1C;
+}
+
+.navlink {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.navlink::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #F1F1F1;
+    transition: width .4s;
+}
+
+.navlink:hover::after {
+    width: 100%;
+    transition: width .4s;
+}
+
+.titleChar {
+    color: #40c8f4;
+}
