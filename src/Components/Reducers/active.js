@@ -6,12 +6,15 @@ export const activeSlice = createSlice({
     name: 'active',
     initialState: {value: initialStateValue},
     reducers: {
-        isActive: (state, action) => {
+        setActive: (state, action) => {
             state.value = action.payload
+        },
+        setInactive: (state) => {
+            state.value = initialStateValue
         }
     }
 });
 
-export const { isActive } = activeSlice.actions;
+export const { setActive, setInactive } = activeSlice.actions;
 
 export default activeSlice.reducer;

@@ -1,11 +1,10 @@
 import Navbar from    './Components/Navigation/Navbar';
-// import Footer from    './Components/Footer/Footer';
 import Timesheet from './Components/Timesheet/Timesheet';
+import AddTimesheet from './Components/Timesheet/AddTimesheet';
 import Dashboard from './Components/Dashboard/Dashboard';
 import Inventory from './Components/Inventory/Inventory';
 import Login from     './Components/Login/Login';
 import SignUp from    './Components/Login/SignUp';
-
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Box from '@mui/material/Box';
 
@@ -17,11 +16,12 @@ function App() {
         <Navbar/>
         
         <Routes>
-          <Route path=""          element={<Dashboard/>}  />
-          <Route path="timesheet" element={<Timesheet/>}  />
-          <Route path="inventory" element={<Inventory/>}  />
-          <Route path="login"     element={<Login/>}      />
-          <Route path="signup"    element={<SignUp/>}     />
+          <Route path=""             element={<Dashboard/>}    />
+          <Route path="timesheet"    element={<Timesheet/>}    />
+          <Route path="inventory"    element={<Inventory/>}    />
+          <Route path="login"        element={<Login/>}        />
+          <Route path="signup"       element={<SignUp/>}       />
+          <Route path="addTimesheet" element={<AddTimesheet/>} />
         </Routes>
 
         {/* <Box sx={{marginTop: 'auto'}}>

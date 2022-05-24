@@ -3,17 +3,17 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-// import Logo from '../../Images/logo2.png';
 import Button from '@mui/material/Button';
-import IconButton from '@mui/material/IconButton';
-import AdminPanelSettingsIcon from '@mui/icons-material/AdminPanelSettings';
+// import IconButton from '@mui/material/IconButton';
+// import AdminPanelSettingsIcon from '@mui/icons-material/AdminPanelSettings';
 import { Link } from "react-router-dom";
 import './Navbar.css';
+import Profile from './Profile';
 
 export default function Navbar() {
   return (
     <Box sx={{position: 'relative'}}>
-      <AppBar position="sticky" elevation={0} sx={{backgroundColor: '#1C1C1C', display: 'flex', justifyContent: 'center', width: '100vw'}}>
+      <AppBar position="static" elevation={0} sx={{backgroundColor: '#1C1C1C', display: 'flex', justifyContent: 'center', width: '100vw'}}>
         <Toolbar disableGutters>
 
                 {/* Navbar Logo */}
@@ -39,11 +39,12 @@ export default function Navbar() {
 
                 {/* Navbar Login */}
                 <Box sx={{marginRight: '15px', position: 'absolute', right: '0'}}>
-                  <Link to="/login" style={{textDecoration: 'none'}}>
+                  {/* <Link to="/login" style={{textDecoration: 'none'}}>
                     <IconButton aria-label="login">
                         <AdminPanelSettingsIcon id="accountIcon" sx={{height: '35px', width: '35px'}}/>
                     </IconButton>
-                  </Link>
+                  </Link> */}
+                  <Profile/>
                 </Box>
 
         </Toolbar>

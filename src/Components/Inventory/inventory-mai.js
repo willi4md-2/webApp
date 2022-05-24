@@ -15,7 +15,6 @@ function MaiInventory() {
 
   const [inventories, setInventories] = useState([]);
 
-
   useEffect(() => {
     const inventoriesRef = collection(db, "inventory-mai");
 
@@ -25,7 +24,6 @@ function MaiInventory() {
     }
     getInventories()
   },  []);
-
 
   return (
     
